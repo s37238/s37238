@@ -1,38 +1,79 @@
-หน้าสะสมผลงานตัวอย่าง (โค้ด)
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แฟ้มสะสมงานของฉัน</title>
-    <style>
-        body { font-family: sans-serif; background-color: #f4f7f6; text-align: center; padding: 30px; }
-        .container { max-width: 800px; margin: 0 auto; }
-        .project-card { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: left; }
-        .btn { display: inline-block; background: #2c3e50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
-    </style>
+    <title>My Portfolio - Strawberry Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="card-container">
+        <!-- เมนูด้านบน -->
+        <navbar>
+            <div class="logo">Fruitopia</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </navbar>
 
-    <div class="container">
-        <h1>📁 แฟ้มสะสมงาน (Portfolio)</h1>
-        <p>นี่คือพื้นที่รวบรวมผลงานและกิจกรรมที่ภูมิใจครับ</p>
+        <div class="main-content">
+            <div class="text-section">
+                <h1>My <span>Works</span></h1>
+                <p class="subtitle">selected recent projects</p>
+                
+                <!-- การ์ดผลงาน 4 รูป พร้อมข้อความใต้รูป -->
+                <div class="portfolio-grid">
+                    
+                    <!-- ผลงานที่ 1 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <!-- เปลี่ยนลิงก์รูปเป็นรูปผลงานของคุณได้ที่นี่ -->
+                            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=400&q=80" alt="Work 1">
+                        </div>
+                        <h3>Web Design</h3>
+                        <p>ออกแบบเว็บไซต์สไตล์มินิมอล</p>
+                    </div>
 
-        <!-- กล่องผลงานชิ้นที่ 1 -->
-        <div class="project-card">
-            <h3>1. โครงงาน/ชิ้นงานวิทยาศาสตร์คำนวณ</h3>
-            <p>รายละเอียดชิ้นงาน: เขียนอธิบายสั้นๆ ว่าทำอะไร ได้เรียนรู้อะไรจากงานนี้บ้าง</p>
+                    <!-- ผลงานที่ 2 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=400&q=80" alt="Work 2">
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>ดีไซน์แอปพลิเคชันมือถือ</p>
+                    </div>
+
+                    <!-- ผลงานที่ 3 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80" alt="Work 3">
+                        </div>
+                        <h3>Frontend Dev</h3>
+                        <p>พัฒนาหน้าเว็บด้วย HTML/CSS</p>
+                    </div>
+
+                    <!-- ผลงานที่ 4 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80" alt="Work 4">
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <p>งานกราฟิกและอาร์ตเวิร์ก</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- รูปใหญ่ด้านข้างขวา -->
+            <div class="image-section">
+                <div class="img-frame">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80" alt="Portfolio Highlight">
+                </div>
+            </div>
         </div>
-
-        <!-- กล่องผลงานชิ้นที่ 2 -->
-        <div class="project-card">
-            <h3>2. กิจกรรม/เกียรติบัตรที่ได้รับ</h3>
-            <p>รายละเอียดชิ้นงาน: เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน...</p>
-        </div>
-
-        <!-- ปุ่มกดกลับหน้าแรก -->
-        <a href="index.html" class="btn">🔙 กลับหน้าแรก</a>
     </div>
-
 </body>
 </html>
