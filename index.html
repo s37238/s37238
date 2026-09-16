@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>phranitnan</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #a3a9ff;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 50px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; line-height: 1.6; }
-    </style>
+    <title>Home - Strawberry Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="card-container">
+        <navbar>
+            <div class="logo">Fruitopia</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </navbar>
 
-    <div class="card">
-        <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน 👋</h1>
-        <p>สวัสดีค่ะ! ผมชื่อ <strong>พนิดนันท์ (phranitnan)</strong></p>
-        <p>ขณะนี้กำลังศึกษา/สนใจด้าน Computer Science & Engineering</p>
-        <p>นี่คือเว็บไซต์แรกของมิวที่โฮสต์บน GitHub Pages!</p>
-    <a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👉 ดูแฟ้มสะสมงานของฉัน</a> 
+        <div class="main-content">
+            <div class="text-section">
+                <h1>Straw<span>berries</span></h1>
+                <p class="subtitle">always fills your heart with joy</p>
+                <p class="description">ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน รวมรวบผลงาน ความสนใจ และช่องทางการติดต่อไว้ครบถ้วน สามารถกดดูส่วนต่างๆ จากเมนูด้านบนได้เลยครับ</p>
+                
+                <div class="btn-group">
+                    <a href="portfolio.html" class="btn btn-primary">View Works</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <div class="img-frame">
+                    <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80" alt="Home Image">
+                </div>
+            </div>
+        </div>
     </div>
-
-
 </body>
 </html>
